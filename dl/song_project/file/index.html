@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>NFI-Arts Cloud Server</title>
+</head>
+<body>
+<script language='javascript'>
+//<![CDATA[
+var download = window.location.href.split("go/")[1].replace("/","")
+var urls={
+    'yoisiti':'SiYoiSiti.mp3',
+    ''       :'https://musikindie.tk'
+}
+if(key){
+    if(urls[key]){
+        window.location.href=urls[key]
+    }else{
+        document.write("'"+key+"' not found :(");
+    }
+}
+//]]>
+</script>
+</body>
+</html>
